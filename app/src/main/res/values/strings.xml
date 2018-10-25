@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LocationTracker</string>
     <string name="user_name">Sheeja P R</string>
+    <string name="flag">3</string>
 </resources>

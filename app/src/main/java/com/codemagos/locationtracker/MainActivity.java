@@ -30,11 +30,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        String user_mode = getResources().getString(R.string.flag);
+        switch (user_mode){
+            case "1":
+                setContentView(R.layout.activity_main);
+                break;
+            case "2":
+                setContentView(R.layout.activity_main2);
+                break;
+            case "3":
+                setContentView(R.layout.activity_main3);
+                break;
+        }
         dbHadler = new DatabaseHandler(getApplicationContext());
         start_btn = findViewById(R.id.start_btn);
         btn_txt = start_btn.findViewWithTag("text");
         btn_image = start_btn.findViewWithTag("image");
+
 
         start_btn.setOnClickListener(new View.OnClickListener() {
             @Override
