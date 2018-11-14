@@ -83,5 +83,17 @@
             android:layout_marginTop="30dp"
             android:onClick="reset"
             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Top Speeds"
+            android:background="#f5f5f5"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="30dp"
+            android:onClick="showTopSpeed"
+            />
     </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>

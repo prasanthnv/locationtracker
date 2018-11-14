@@ -25,7 +25,8 @@
             android:name=".Services.LocationService"
             android:enabled="true" />
 
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".HistoryActivity"></activity>
     </application>
 
 </manifest>
